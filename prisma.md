@@ -90,7 +90,7 @@ The install command invokes prisma generate for you which reads your Prisma sche
 
 To send queries to the database, you will need a TypeScript file or just a javascript file to execute your Prisma Client queries.We will use javascript. Create a new file called script.js for this purpose.
 
-# Create a new User record
+## Create a new User record
 Let's start with a small query to create a new User record in the database and log the resulting object to the console. Add the following code to your script.js file:
 
 ![alt text](image.png)
@@ -103,19 +103,19 @@ To craete many users use the ***createMany()*** function call instead of ***crea
 
 Remember to run a migration to ensure consistency 
 
-# Retrieve all user records
+## Retrieve all user records
 
 we use the function call ***findMany()***
 
-# Retrive first user to  pass criteria
+## Retrive first user to  pass criteria
 
 We use ***findFirst()*** and the ***where*** and ***select*** key words
 
-# Update table
+## Update table
 
 We use the ***update()*** and specify  where update should happen using where key word.
 
-# Delete user 
+## Delete user 
 
 We use the ***delete()*** 
 
