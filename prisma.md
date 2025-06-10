@@ -86,6 +86,10 @@ Lucky for us , when we did the migrations it got installed however, the command 
 
 ` $ npm install @prisma/client`
 
+Now generate  the client with the command :
+
+`npx prisma generate`
+
 The install command invokes prisma generate for you which reads your Prisma schema and generates a version of Prisma Client that is tailored to your models.
 
 To send queries to the database, you will need a TypeScript file or just a javascript file to execute your Prisma Client queries.We will use javascript. Create a new file called script.js for this purpose.
