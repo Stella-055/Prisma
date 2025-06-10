@@ -74,8 +74,8 @@ At this point, you have a Prisma schema but no database yet. Run the following c
 
 This command did three things:
 
-1. It created a new SQL migration file for this migration in the prisma/migrations directory.
-2. It executed the SQL migration file against the database.
+1. It created a new postgresql migration file for this migration in the prisma/migrations directory.
+2. It executed the postgresql migration file against the database.
 3. It ran prisma generate under the hood (which installed the @prisma/client package and generated a tailored   Prisma Client API based on your models).
 
 # Prisma Client
@@ -121,4 +121,7 @@ We use the ***delete()***
 
 To delete alot of records at once we use the ***deleteMany()***
 
-However remember that in real world enterprises we do not delete records permanently but perform a soft deletion
+However remember that in real world enterprises we do not delete records permanently but perform a soft 
+
+## Relationships
+
