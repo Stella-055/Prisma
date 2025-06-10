@@ -20,5 +20,5 @@
 
  ## NOTE
 
-If you do not specify the data source provider prisma sets it as postgresql as default
+**If you do not specify the data source provider prisma sets it as postgresql as default**
 
