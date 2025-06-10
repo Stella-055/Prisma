@@ -60,3 +60,16 @@ The models appear in the format:
 
  `@map ,@@map , @@default ,@@unique`
 
+ # Migrations in prisma
+
+Migrations are a way to manage and apply changes to your database in a controlled and consistent way.
+
+At this point, you have a Prisma schema but no database yet. Run the following command in your terminal to create the  database and the User  table represented by your model:
+
+` $npx prisma migrate dev --name init`
+
+This command did three things:
+
+1. It created a new SQL migration file for this migration in the prisma/migrations directory.
+2. It executed the SQL migration file against the database.
+3. It ran prisma generate under the hood (which installed the @prisma/client package and generated a tailored   Prisma Client API based on your models).
