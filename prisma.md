@@ -92,16 +92,15 @@ Now generate  the client with the command :
 
 The install command invokes prisma generate for you which reads your Prisma schema and generates a version of Prisma Client that is tailored to your models.
 
-To send queries to the database, you will need a TypeScript file or just a javascript file to execute your Prisma Client queries.We will use javascript. Create a new file called script.js for this purpose.
 
 ## Create a new User record
-Let's start with a small query to create a new User record in the database and log the resulting object to the console. Add the following code to your script.js file:
+Let's start with a small query to create a new User record in the database and log the resulting object to the console. 
 
 ![alt text](image.png)
 
 Now if you execute the javascript file you will have created a new user record
 
-To craete many users use the ***createMany()*** function call instead of ***create()*** and create an array of objects.
+To create many users use the ***createMany()*** function call instead of ***create()*** and create an array of objects.
 
 # NOTE
 
