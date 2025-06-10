@@ -34,15 +34,10 @@ Inside the schema.prisma file ,you can create the database tables
 The models appear in the format:
 
       model User {
-
-      id    Int     @id @default(autoincrement())
-
-       email String  @unique
-
+       id    Int     @id @default(autoincrement())
+      email String  @unique 
       name  String?
-
-       posts Post[]
-
+      posts Post[]
        }
 
  According to what we have created the database will have a table called  User
@@ -54,4 +49,14 @@ The models appear in the format:
  Field types can be of type :
 
  `String , Int , Boolean , JSON , Decimal , float , Bytes , BigInt`  
+
+ Field attributes as we said are optional 
+
+ Example is @id that we used ealier which makes a field a primary key.
+
+ The rest eg **@unique**,**default** their names explain how they work.
+
+ Other examples of field attributes include 
+
+ `@map ,@@map , @@default ,@@unique`
 
