@@ -18,7 +18,30 @@
 
  You can also note the .env file created which is used for defining the environment variables such as the connection string.
 
- ## NOTE
+ ## NOTE:
 
 **If you do not specify the data source provider prisma sets it as postgresql as default**
+
+# Model your data in the Prisma schema
+
+Models in the Prisma schema have two main purposes:
+
+* Represent the tables in the underlying database
+* Serve as foundation for the generated Prisma Client API
+
+Inside the schema.prisma file ,you can create the database tables 
+
+The models appear in the format:
+
+model User {
+
+  id    Int     @id @default(autoincrement())
+
+  email String  @unique
+
+  name  String?
+
+  posts Post[]
+  
+}
 
