@@ -102,3 +102,23 @@ To craete many users use the ***createMany()*** function call instead of ***crea
 # NOTE
 
 Remember to run a migration to ensure consistency 
+
+# Retrieve all user records
+
+we use the function call ***findMany()***
+
+# Retrive first user to  pass criteria
+
+We use ***findFirst()*** and the ***where*** and ***select*** key words
+
+# Update table
+
+We use the ***update()*** and specify  where update should happen using where key word.
+
+# Delete user 
+
+We use the ***delete()*** 
+
+To delete alot of records at once we use the ***deleteMany()***
+
+However remember that in real world enterprises we do not delete records permanently but perform a soft deletion
