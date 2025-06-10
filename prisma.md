@@ -126,5 +126,5 @@ To delete alot of records at once we use the ***deleteMany()***
 
 However remember that in real world enterprises we do not delete records permanently but perform a soft 
 
-## Relationships
+
 
