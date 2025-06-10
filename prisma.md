@@ -33,15 +33,25 @@ Inside the schema.prisma file ,you can create the database tables
 
 The models appear in the format:
 
-model User {
+      model User {
 
-  id    Int     @id @default(autoincrement())
+      id    Int     @id @default(autoincrement())
 
-  email String  @unique
+       email String  @unique
 
-  name  String?
+      name  String?
 
-  posts Post[]
-  
-}
+       posts Post[]
+
+       }
+
+ According to what we have created the database will have a table called  User
+
+ What is inside the  {} is what we call fields.
+
+ Fields contain the field name, the field type and attributes which are optional.
+
+ Field types can be of type :
+
+ `String , Int , Boolean , JSON , Decimal , float , Bytes , BigInt`  
 
