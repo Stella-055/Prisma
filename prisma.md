@@ -97,4 +97,8 @@ Let's start with a small query to create a new User record in the database and l
 
 Now if you execute the javascript file you will have created a new user record
 
-To craete many users use the *createMany()* function call instead of *create()* and create an array of objects.
+To craete many users use the ***createMany()*** function call instead of ***create()*** and create an array of objects.
+
+# NOTE
+
+Remember to run a migration to ensure consistency 
