@@ -3,7 +3,11 @@
 
  Prisma ORM makes it easy for developers to reason about their database queries by providing a clean and type-safe API for submitting database queries which returns plain old JavaScript objects.
 
- To be able to work with prisma you have to ensure you have node installed and the rest is a work in the park
+ To be able to work with prisma you have to ensure you have node installed and the rest is a walk in the park.
+
+ TO begin generate the package.json file:
+
+ `$ npm init --y`
 
  To install the Prisma CLI as a development dependency in your project run :
 
@@ -66,10 +70,22 @@ Migrations are a way to manage and apply changes to your database in a controlle
 
 At this point, you have a Prisma schema but no database yet. Run the following command in your terminal to create the  database and the User  table represented by your model:
 
-` $npx prisma migrate dev --name init`
+` $npx prisma migrate dev --name`
 
 This command did three things:
 
 1. It created a new SQL migration file for this migration in the prisma/migrations directory.
 2. It executed the SQL migration file against the database.
 3. It ran prisma generate under the hood (which installed the @prisma/client package and generated a tailored   Prisma Client API based on your models).
+
+# Prisma Client
+
+Now to be able to make queries to your db you need the prisma client.
+
+Lucky for us , when we did the migrations it got installed however, the command to install prisma client is :
+
+` $ npm install @prisma/client`
+
+The install command invokes prisma generate for you which reads your Prisma schema and generates a version of Prisma Client that is tailored to your models.
+
+To send queries to the database, you will need a TypeScript file or just a javascript file to execute your Prisma Client queries. Create a new file called script.js for this purpose.
